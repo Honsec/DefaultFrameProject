@@ -5,6 +5,7 @@ import android.content.Context;
 import genius.sqldb.listener.IDBListener;
 import genius.sqldb.listener.SimpleDBListener;
 
+
 /**
  * 数据库相关配置
  * @author: huylee

@@ -16,6 +16,7 @@ import genius.sqldb.manager.SQLExecuteManager;
 import genius.sqldb.util.CursorUtil;
 import genius.sqldb.util.ValueUtil;
 
+
 /**
  * 数据库操作类
  * 使用此功能需要如下两个权限：
@@ -353,7 +354,7 @@ public class SQLiteDB {
 	 * Author: hyl
 	 * Time: 2015-8-21上午11:29:05
 	 * @param mClass		查询的实体类
-	 * @param whereClause	查询条件where子句
+	 * @param sql	查询条件where子句
 	 * @param whereArgs		where子句参数
 	 * @return
 	 */
@@ -392,8 +393,8 @@ public class SQLiteDB {
 	 * Author: hyl
 	 * Time: 2015-8-21上午11:43:18
 	 * @param mClass		查询实体类，返回实体类型
-	 * @param sql			查询语句
-	 * @param bindArgs		查询语句中的参数
+	 * @param whereClause			查询语句
+	 * @param whereArgs		查询语句中的参数
 	 * @param curPage		当前页码
 	 * @param pageSize		每页数据条数
 	 * @return

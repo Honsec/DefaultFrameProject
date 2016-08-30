@@ -6,7 +6,7 @@ import java.util.Hashtable;
 import java.util.Stack;
 
 /**
- *
+ * Activity 管理table
  */
 public class UtilsActivity {
 

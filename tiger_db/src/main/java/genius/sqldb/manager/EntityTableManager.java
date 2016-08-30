@@ -20,6 +20,7 @@ import genius.sqldb.bean.Property;
 import genius.sqldb.util.CursorUtil;
 import genius.sqldb.util.ValueUtil;
 
+
 /**
  * 实体类管理对象
  * @author: huylee

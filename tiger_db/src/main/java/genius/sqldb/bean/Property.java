@@ -9,6 +9,7 @@ import genius.sqldb.manager.FieldTypeManager;
 import genius.sqldb.util.DateUtil;
 import genius.sqldb.util.ValueUtil;
 
+
 /**
  * 实体属性字段
  * @author: huylee

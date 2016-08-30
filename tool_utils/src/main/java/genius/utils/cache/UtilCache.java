@@ -1,10 +1,14 @@
 package genius.utils.cache;
 
-import android.support.v4.util.LruCache;
+
+import android.annotation.TargetApi;
+import android.os.Build;
+import android.util.LruCache;
 
 /**
  * Created by Hongsec on 2016-07-21.
  */
+@TargetApi(Build.VERSION_CODES.HONEYCOMB_MR1)
 public class UtilCache<T> extends LruCache<String,T> {
 
     public static int getDefaultLruCacheSize() {

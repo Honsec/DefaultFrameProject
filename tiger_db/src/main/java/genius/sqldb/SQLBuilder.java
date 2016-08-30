@@ -12,6 +12,7 @@ import genius.sqldb.manager.EntityTableManager;
 import genius.sqldb.manager.FieldTypeManager;
 import genius.sqldb.util.ValueUtil;
 
+
 /**
  * SQL语句构造器
  * Author: hyl
@@ -106,7 +107,7 @@ public class SQLBuilder {
 	 * 构造插入语句
 	 * Author: hyl
 	 * Time: 2015-8-16下午9:05:10
-	 * @param entity	要插入的实体对象
+	 * @param  entity	要插入的实体对象
 	 * @return
 	 */
 	public static <T> BindSQL getInsertSQL(T entity) {
