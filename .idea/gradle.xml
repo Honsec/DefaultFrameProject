@@ -9,17 +9,21 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/baselib" />
-            <option value="$PROJECT_DIR$/tiger_db" />
+            <option value="$PROJECT_DIR$/commonrecyclerviewadpater" />
             <option value="$PROJECT_DIR$/tool_utils" />
+            <option value="$PROJECT_DIR$/volleyhelper" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/baselib" />
-            <option value="$PROJECT_DIR$/tiger_db" />
+            <option value="$PROJECT_DIR$/commonrecyclerviewadpater" />
             <option value="$PROJECT_DIR$/tool_utils" />
+            <option value="$PROJECT_DIR$/volleyhelper" />
           </set>
         </option>
       </GradleProjectSettings>

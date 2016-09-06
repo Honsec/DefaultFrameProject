@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DefaultFrameProject.iml" filepath="$PROJECT_DIR$/DefaultFrameProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/baselib/baselib.iml" filepath="$PROJECT_DIR$/baselib/baselib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tiger_db/tiger_db.iml" filepath="$PROJECT_DIR$/tiger_db/tiger_db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonrecyclerviewadpater/commonrecyclerviewadpater.iml" filepath="$PROJECT_DIR$/commonrecyclerviewadpater/commonrecyclerviewadpater.iml" />
       <module fileurl="file://$PROJECT_DIR$/tool_utils/tool_utils.iml" filepath="$PROJECT_DIR$/tool_utils/tool_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volleyhelper/volleyhelper.iml" filepath="$PROJECT_DIR$/volleyhelper/volleyhelper.iml" />
     </modules>
   </component>
 </project>
