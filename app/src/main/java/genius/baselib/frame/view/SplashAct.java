@@ -1,17 +1,10 @@
 package genius.baselib.frame.view;
 
 import android.Manifest;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
-import android.text.TextUtils;
 
-import com.miniram.donpush.cccid.R;
-import com.miniram.donpush.cccid.base.BaseAct;
-import com.miniram.donpush.cccid.center.CStatic;
-import com.miniram.donpush.cccid.service.AppUploadService;
-
-import genius.baselib.PreferenceUtil;
+import genius.baselib.frame.base.BaseAct;
 
 /**
  * Created by Hongsec on 2016-09-06.
@@ -19,7 +12,7 @@ import genius.baselib.PreferenceUtil;
 public class SplashAct extends BaseAct {
     @Override
     protected int setContentLayoutResID() {
-        return R.layout.activity_splash;
+        return 0;
     }
 
     @Override
@@ -30,27 +23,6 @@ public class SplashAct extends BaseAct {
 
     private void doActions() {
 
-        //앱리스트를 올림
-        Intent service = new Intent(this, AppUploadService.class);
-        service.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
-        startService(service);
-
-
-        String ses = PreferenceUtil.getInstance(getApplicationContext()).getValue(CStatic.SP_SES, "");
-        int em = PreferenceUtil.getInstance(getApplicationContext()).getValue(CStatic.SP_MEMNO, -1);
-
-
-        if (TextUtils.isEmpty(ses) || em==-1) {
-            // not logined
-            Intent intent = new Intent(this,LoginAct.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP| Intent.FLAG_ACTIVITY_NEW_TASK);
-           startActivity(intent);
-        }else{
-            //logined
-            Intent intent = new Intent(this,MainAct.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP| Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent);
-        }
 
     }
 

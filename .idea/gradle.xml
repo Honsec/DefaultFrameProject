@@ -5,13 +5,17 @@
       <GradleProjectSettings>
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="E:\program\Android Studio\gradle\gradle-2.14.1" />
+        <option name="gradleHome" value="C:\IDE\Android Studio\gradle\gradle-2.14.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/baselib" />
             <option value="$PROJECT_DIR$/commonrecyclerviewadpater" />
+            <option value="$PROJECT_DIR$/hf_load_springview" />
+            <option value="$PROJECT_DIR$/loadingindicator" />
+            <option value="$PROJECT_DIR$/magicindicator" />
+            <option value="$PROJECT_DIR$/multi-image-selector" />
             <option value="$PROJECT_DIR$/tool_utils" />
             <option value="$PROJECT_DIR$/volleyhelper" />
           </set>
@@ -22,6 +26,10 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/baselib" />
             <option value="$PROJECT_DIR$/commonrecyclerviewadpater" />
+            <option value="$PROJECT_DIR$/hf_load_springview" />
+            <option value="$PROJECT_DIR$/loadingindicator" />
+            <option value="$PROJECT_DIR$/magicindicator" />
+            <option value="$PROJECT_DIR$/multi-image-selector" />
             <option value="$PROJECT_DIR$/tool_utils" />
             <option value="$PROJECT_DIR$/volleyhelper" />
           </set>

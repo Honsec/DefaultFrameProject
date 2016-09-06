@@ -1,5 +1,6 @@
 package genius.utils;
 
+import android.os.Bundle;
 import android.util.Log;
 
 /**
@@ -156,5 +157,12 @@ public class UtilsLog  {
         }
     }
 
+
+    public static void ShowExtras(Bundle bundle){
+        if(bundle == null) return;
+        for (String key : bundle.keySet()) {
+            UtilsLog.d( "Extra key=" + key + ", value=" + bundle.get(key));
+        }
+    }
 
 }

@@ -15,7 +15,7 @@ import genius.utils.UtilsNetwork;
  */
 public abstract  class BaseActivity extends BaseAbstractActivity {
 
-    protected genius.baselib.base.BaseActivity mContext;
+    protected  BaseActivity mContext;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

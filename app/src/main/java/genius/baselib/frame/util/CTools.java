@@ -1,13 +1,9 @@
 package genius.baselib.frame.util;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
-
-import com.miniram.donpush.cccid.center.CStatic;
-import com.miniram.donpush.cccid.view.SplashAct;
 
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidAlgorithmParameterException;
@@ -19,6 +15,7 @@ import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 
 import genius.baselib.PreferenceUtil;
+import genius.baselib.frame.center.CStatic;
 import genius.utils.encode.AES256Cipher;
 
 /**
@@ -55,14 +52,6 @@ public class CTools {
     }
 
 
-    public static void logout(Context mContext){
-        PreferenceUtil.getInstance(mContext.getApplicationContext()).remove(CStatic.SP_SES);
-        PreferenceUtil.getInstance(mContext.getApplicationContext()).remove(CStatic.SP_MEMNO);
-        Intent intent = new Intent(mContext, SplashAct.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP| Intent.FLAG_ACTIVITY_NEW_TASK);
-        mContext.startActivity(intent);
-    }
-
 
     public static String Encode(String value){
 
@@ -89,4 +78,7 @@ public class CTools {
         return result.trim();
     }
 
+    public static void logout(Context mContext) {
+
+    }
 }

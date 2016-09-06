@@ -1,8 +1,6 @@
 package genius.baselib.frame.api;
 
-import android.content.Context;
-
-import genius.baselib.frame.BaseJsonApi;
+import genius.baselib.frame.base.BaseJsonApi;
 
 /**
  * Created by Hongsec on 2016-09-05.

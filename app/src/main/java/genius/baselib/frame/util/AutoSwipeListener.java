@@ -23,7 +23,7 @@ public class AutoSwipeListener extends SwipeRefreshLayout {
     /**
      * 自动刷新
      */
-    public void autoRefresh() {
+    public void preformRefresh() {
         try {
             Field mCircleView = SwipeRefreshLayout.class.getDeclaredField("mCircleView");
             mCircleView.setAccessible(true);

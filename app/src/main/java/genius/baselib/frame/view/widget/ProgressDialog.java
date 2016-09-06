@@ -10,7 +10,8 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 
-import com.miniram.donpush.cccid.R;
+import genius.baselib.frame.R;
+
 
 /**
  * @author kim seok woon

@@ -56,32 +56,32 @@ public class BusMessage {
         return action_code;
     }
 
-    public genius.baselib.bus.BusMessage setBustype(BUSTYPE bustype) {
+    public BusMessage setBustype(BUSTYPE bustype) {
         this.bustype = bustype;
         return  this;
     }
 
-    public genius.baselib.bus.BusMessage setTarget_name(List<String> target_name) {
+    public BusMessage setTarget_name(List<String> target_name) {
         this.target_name = target_name;
         return this;
     }
 
-    public genius.baselib.bus.BusMessage setTarget_all(boolean target_all) {
+    public BusMessage setTarget_all(boolean target_all) {
         this.target_all = target_all;
         return  this;
     }
 
-    public genius.baselib.bus.BusMessage add_targetName(String target_name) {
+    public BusMessage add_targetName(String target_name) {
         this.target_name.add(target_name);
         return  this;
     }
 
-    public genius.baselib.bus.BusMessage setObject(Object object) {
+    public BusMessage setObject(Object object) {
         this.object = object;
         return  this;
     }
 
-    public genius.baselib.bus.BusMessage setAction_code(int action_code) {
+    public BusMessage setAction_code(int action_code) {
         this.action_code = action_code;
         return  this;
     }
