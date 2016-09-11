@@ -23,7 +23,7 @@ import genius.utils.UtilsNetwork;
 /**
  * Created by Hongsec on 2016-07-21.
  */
-public class NetworkReceiver  extends BroadcastReceiver {
+public class NetworkReceiver extends BroadcastReceiver {
     public static final int UPDATE_NET = 1000;
 
     public static final String NetworkStatusKey= "network_key" ;
@@ -47,9 +47,9 @@ public class NetworkReceiver  extends BroadcastReceiver {
      * @param context
      */
     public static void checkNetWork(Context context){
-        if(NetworkReceiver.checkEnable) return;
+        if(genius.baselib.receiver.NetworkReceiver.checkEnable) return;
 
-        switch (TempData.getWeak(PreferenceUtil.getValue(context, NetworkReceiver.NetworkStatusKey,-1))){
+        switch (TempData.getWeak(PreferenceUtil.getValue(context, genius.baselib.receiver.NetworkReceiver.NetworkStatusKey,-1))){
 
             case -1://noset
 
@@ -58,19 +58,19 @@ public class NetworkReceiver  extends BroadcastReceiver {
                 break;
             case 0:
 
-                if(NetworkReceiver.checkEnable){
-                    BusTool.sendBus(new BusMessage(BusMessage.BUSTYPE.onEventMainThread,true, UtilsNetwork.TYPE.NOT_CONNECTED,NetworkReceiver.UPDATE_NET));
+                if(genius.baselib.receiver.NetworkReceiver.checkEnable){
+                    BusTool.sendBus(new BusMessage(BusMessage.BUSTYPE.onEventMainThread,true, UtilsNetwork.TYPE.NOT_CONNECTED, genius.baselib.receiver.NetworkReceiver.UPDATE_NET));
                 }
 
                 break;
             case 1:
-                if(NetworkReceiver.checkEnable){
-                    BusTool.sendBus(new BusMessage(BusMessage.BUSTYPE.onEventMainThread,true,UtilsNetwork.TYPE.WIFI,NetworkReceiver.UPDATE_NET));
+                if(genius.baselib.receiver.NetworkReceiver.checkEnable){
+                    BusTool.sendBus(new BusMessage(BusMessage.BUSTYPE.onEventMainThread,true, UtilsNetwork.TYPE.WIFI, genius.baselib.receiver.NetworkReceiver.UPDATE_NET));
                 }
                 break;
             case 2:
-                if(NetworkReceiver.checkEnable){
-                    BusTool.sendBus(new BusMessage(BusMessage.BUSTYPE.onEventMainThread,true,UtilsNetwork.TYPE.MOBILE,NetworkReceiver.UPDATE_NET));
+                if(genius.baselib.receiver.NetworkReceiver.checkEnable){
+                    BusTool.sendBus(new BusMessage(BusMessage.BUSTYPE.onEventMainThread,true, UtilsNetwork.TYPE.MOBILE, genius.baselib.receiver.NetworkReceiver.UPDATE_NET));
                 }
                 break;
         }
@@ -81,17 +81,17 @@ public class NetworkReceiver  extends BroadcastReceiver {
 
         if(connectivityStatus == UtilsNetwork.TYPE.NOT_CONNECTED){
             //no network
-            PreferenceUtil.setValue(context, NetworkReceiver.NetworkStatusKey,0);
+            PreferenceUtil.setValue(context, genius.baselib.receiver.NetworkReceiver.NetworkStatusKey,0);
         }else if(connectivityStatus == UtilsNetwork.TYPE.WIFI){
             //wifi
-            PreferenceUtil.setValue(context,NetworkReceiver.NetworkStatusKey,1);
+            PreferenceUtil.setValue(context, genius.baselib.receiver.NetworkReceiver.NetworkStatusKey,1);
         }else if(connectivityStatus == UtilsNetwork.TYPE.MOBILE){
             //mobile
-            PreferenceUtil.setValue(context,NetworkReceiver.NetworkStatusKey,2);
+            PreferenceUtil.setValue(context, genius.baselib.receiver.NetworkReceiver.NetworkStatusKey,2);
         }
 
-        if(NetworkReceiver.checkEnable){
-            BusTool.sendBus(new BusMessage(BusMessage.BUSTYPE.onEventMainThread,true,connectivityStatus,NetworkReceiver.UPDATE_NET));
+        if(genius.baselib.receiver.NetworkReceiver.checkEnable){
+            BusTool.sendBus(new BusMessage(BusMessage.BUSTYPE.onEventMainThread,true,connectivityStatus, genius.baselib.receiver.NetworkReceiver.UPDATE_NET));
         }
     }
 

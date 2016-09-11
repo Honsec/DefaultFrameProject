@@ -12,7 +12,7 @@ import genius.utils.UtilsNetwork;
 /**
  * Created by Hongsec on 2016-07-21.
  */
-public abstract  class BaseActivity extends BaseAbstractActivity  {
+public abstract  class BaseActivity extends BaseAbstractActivity {
 
     protected BaseActivity mContext;
 

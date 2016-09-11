@@ -33,10 +33,10 @@ public class BaseApplication extends Application {
             PreferenceUtil.setValue(this, NetworkReceiver.NetworkStatusKey,0);
         }else if(connectivityStatus == UtilsNetwork.TYPE.WIFI){
             //wifi
-            PreferenceUtil.setValue(this,NetworkReceiver.NetworkStatusKey,1);
+            PreferenceUtil.setValue(this, NetworkReceiver.NetworkStatusKey,1);
         }else if(connectivityStatus == UtilsNetwork.TYPE.MOBILE){
             //mobile
-            PreferenceUtil.setValue(this,NetworkReceiver.NetworkStatusKey,2);
+            PreferenceUtil.setValue(this, NetworkReceiver.NetworkStatusKey,2);
         }
     }
 }

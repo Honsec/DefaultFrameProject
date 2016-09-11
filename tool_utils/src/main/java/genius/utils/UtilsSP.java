@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class UtilsSP {
-  private   String TAG=TAG=UtilsSP.class.getSimpleName();
+  private   String TAG=TAG= genius.utils.UtilsSP.class.getSimpleName();
 
 	private Context context;
 	private SharedPreferences sp = null;

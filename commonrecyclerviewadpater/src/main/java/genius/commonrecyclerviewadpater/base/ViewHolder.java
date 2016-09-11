@@ -8,6 +8,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.v7.widget.RecyclerView;
+import android.text.Spanned;
 import android.text.util.Linkify;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
@@ -85,6 +86,20 @@ public class ViewHolder extends RecyclerView.ViewHolder
      * @return
      */
     public ViewHolder setText(int viewId, String text)
+    {
+        TextView tv = getView(viewId);
+        tv.setText(text);
+        return this;
+    }
+
+    /**
+     * 设置TextView的值
+     *
+     * @param viewId
+     * @param text
+     * @return
+     */
+    public ViewHolder setText(int viewId, Spanned text)
     {
         TextView tv = getView(viewId);
         tv.setText(text);

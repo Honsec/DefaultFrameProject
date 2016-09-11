@@ -18,7 +18,7 @@ import genius.utils.UtilsActivity;
 public abstract class BaseAbstractActivity extends AppCompatActivity {
 
 
-    protected String TAG = this.getClass().getSimpleName();
+    protected  String TAG = this.getClass().getSimpleName();
 
     /**
      * 앱티비티가 로드 완료되였는지 표기하는 필더 onWindowFocusChanged 참고
@@ -39,10 +39,14 @@ public abstract class BaseAbstractActivity extends AppCompatActivity {
     protected abstract void viewLoadFinished();
 
 
+
     /**
      * 뷰초기화  in onCreate
      */
     protected abstract void initViews();
+
+
+
 
 
     @Override
@@ -85,6 +89,7 @@ public abstract class BaseAbstractActivity extends AppCompatActivity {
     }
 
 
+
     /**
      * findViewById를 다시 만듬
      *
@@ -95,6 +100,7 @@ public abstract class BaseAbstractActivity extends AppCompatActivity {
     public <T extends View> T findViewBId(@IdRes int id) {
         return (T) super.findViewById(id);
     }
+
 
     /**
      * 권한체크여부  쇼미는 무조건 권한체크함. 기타 6.0이상만 함<br/>
@@ -165,5 +171,6 @@ public abstract class BaseAbstractActivity extends AppCompatActivity {
         }
         return  true;
     }
+
 
 }
